@@ -1,0 +1,5 @@
+==============================
+collective.permissionsoverview
+==============================
+
+User documentation
