@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.permissionsoverview">
+
+ <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+    name="permissions-overview"
+    for="*"
+    class=".permissions_overview.PermissionsOverview"
+    template="permissions_overview.pt"
+    permission="zope2.View"
+    layer="collective.permissionsoverview.interfaces.ICollectivePermissionsoverviewLayer"
+    />
+
+</configure>
