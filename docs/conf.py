@@ -42,7 +42,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'collective.permissionsoverview'
+project = u'collective.localrolesoverview'
 copyright = u'Maik Derstappen (MrTango)'
 author = u'Maik Derstappen (MrTango)'
 
@@ -199,7 +199,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'collective.permissionsoverviewdoc'
+htmlhelp_basename = 'collective.localrolesoverviewdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 

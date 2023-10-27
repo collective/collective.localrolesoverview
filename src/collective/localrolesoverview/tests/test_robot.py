@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from collective.permissionsoverview.testing import (  # noqa: E501
-    COLLECTIVE_PERMISSIONSOVERVIEW_ACCEPTANCE_TESTING,
+from collective.localrolesoverview.testing import (  # noqa: E501
+    COLLECTIVE_LOCALROLESOVERVIEW_ACCEPTANCE_TESTING,
 )
 from plone.app.testing import ROBOT_TEST_LEVEL
 from plone.testing import layered
@@ -26,7 +26,7 @@ def test_suite():
             [
                 layered(
                     robottestsuite,
-                    layer=COLLECTIVE_PERMISSIONSOVERVIEW_ACCEPTANCE_TESTING,
+                    layer=COLLECTIVE_LOCALROLESOVERVIEW_ACCEPTANCE_TESTING,
                 ),
             ]
         )

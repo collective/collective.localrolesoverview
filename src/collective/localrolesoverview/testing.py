@@ -7,10 +7,10 @@ from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
 
-import collective.permissionsoverview
+import collective.localrolesoverview
 
 
-class CollectivePermissionsoverviewLayer(PloneSandboxLayer):
+class CollectiveLocalrolesoverviewviewLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_FIXTURE,)
 
@@ -24,32 +24,32 @@ class CollectivePermissionsoverviewLayer(PloneSandboxLayer):
         import plone.restapi
 
         self.loadZCML(package=plone.restapi)
-        self.loadZCML(package=collective.permissionsoverview)
+        self.loadZCML(package=collective.localrolesoverview)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, "collective.permissionsoverview:default")
+        applyProfile(portal, "collective.localrolesoverview:default")
 
 
-COLLECTIVE_PERMISSIONSOVERVIEW_FIXTURE = CollectivePermissionsoverviewLayer()
+COLLECTIVE_LOCALROLESOVERVIEW_FIXTURE = CollectiveLocalrolesoverviewviewLayer()
 
 
-COLLECTIVE_PERMISSIONSOVERVIEW_INTEGRATION_TESTING = IntegrationTesting(
-    bases=(COLLECTIVE_PERMISSIONSOVERVIEW_FIXTURE,),
-    name="CollectivePermissionsoverviewLayer:IntegrationTesting",
+COLLECTIVE_LOCALROLESOVERVIEW_INTEGRATION_TESTING = IntegrationTesting(
+    bases=(COLLECTIVE_LOCALROLESOVERVIEW_FIXTURE,),
+    name="CollectiveLocalrolesoverviewviewLayer:IntegrationTesting",
 )
 
 
-COLLECTIVE_PERMISSIONSOVERVIEW_FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(COLLECTIVE_PERMISSIONSOVERVIEW_FIXTURE,),
-    name="CollectivePermissionsoverviewLayer:FunctionalTesting",
+COLLECTIVE_LOCALROLESOVERVIEW_FUNCTIONAL_TESTING = FunctionalTesting(
+    bases=(COLLECTIVE_LOCALROLESOVERVIEW_FIXTURE,),
+    name="CollectiveLocalrolesoverviewviewLayer:FunctionalTesting",
 )
 
 
-COLLECTIVE_PERMISSIONSOVERVIEW_ACCEPTANCE_TESTING = FunctionalTesting(
+COLLECTIVE_LOCALROLESOVERVIEW_ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
-        COLLECTIVE_PERMISSIONSOVERVIEW_FIXTURE,
+        COLLECTIVE_LOCALROLESOVERVIEW_FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name="CollectivePermissionsoverviewLayer:AcceptanceTesting",
+    name="CollectiveLocalrolesoverviewviewLayer:AcceptanceTesting",
 )

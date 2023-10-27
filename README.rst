@@ -2,33 +2,33 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on PyPI or github. It is a comment.
 
-.. image:: https://github.com/collective/collective.permissionsoverview/actions/workflows/plone-package.yml/badge.svg
-    :target: https://github.com/collective/collective.permissionsoverview/actions/workflows/plone-package.yml
+.. image:: https://github.com/collective/collective.localrolesoverview/actions/workflows/plone-package.yml/badge.svg
+    :target: https://github.com/collective/collective.localrolesoverview/actions/workflows/plone-package.yml
 
-.. image:: https://coveralls.io/repos/github/collective/collective.permissionsoverview/badge.svg?branch=main
-    :target: https://coveralls.io/github/collective/collective.permissionsoverview?branch=main
+.. image:: https://coveralls.io/repos/github/collective/collective.localrolesoverview/badge.svg?branch=main
+    :target: https://coveralls.io/github/collective/collective.localrolesoverview?branch=main
     :alt: Coveralls
 
-.. image:: https://codecov.io/gh/collective/collective.permissionsoverview/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/collective/collective.permissionsoverview
+.. image:: https://codecov.io/gh/collective/collective.localrolesoverview/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/collective/collective.localrolesoverview
 
-.. image:: https://img.shields.io/pypi/v/collective.permissionsoverview.svg
-    :target: https://pypi.python.org/pypi/collective.permissionsoverview/
+.. image:: https://img.shields.io/pypi/v/collective.localrolesoverview.svg
+    :target: https://pypi.python.org/pypi/collective.localrolesoverview/
     :alt: Latest Version
 
-.. image:: https://img.shields.io/pypi/status/collective.permissionsoverview.svg
-    :target: https://pypi.python.org/pypi/collective.permissionsoverview
+.. image:: https://img.shields.io/pypi/status/collective.localrolesoverview.svg
+    :target: https://pypi.python.org/pypi/collective.localrolesoverview
     :alt: Egg Status
 
-.. image:: https://img.shields.io/pypi/pyversions/collective.permissionsoverview.svg?style=plastic   :alt: Supported - Python Versions
+.. image:: https://img.shields.io/pypi/pyversions/collective.localrolesoverview.svg?style=plastic   :alt: Supported - Python Versions
 
-.. image:: https://img.shields.io/pypi/l/collective.permissionsoverview.svg
-    :target: https://pypi.python.org/pypi/collective.permissionsoverview/
+.. image:: https://img.shields.io/pypi/l/collective.localrolesoverview.svg
+    :target: https://pypi.python.org/pypi/collective.localrolesoverview/
     :alt: License
 
 
 ==============================
-collective.permissionsoverview
+collective.localrolesoverview
 ==============================
 
 Shows assigned local roles for all users, groups on content.
@@ -63,14 +63,14 @@ This product has been translated into
 Installation
 ------------
 
-Install collective.permissionsoverview by adding it to your buildout::
+Install collective.localrolesoverview by adding it to your buildout::
 
     [buildout]
 
     ...
 
     eggs =
-        collective.permissionsoverview
+        collective.localrolesoverview
 
 
 and then running ``bin/buildout``
@@ -93,8 +93,8 @@ Put your name here, you deserve it!
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/collective.permissionsoverview/issues
-- Source Code: https://github.com/collective/collective.permissionsoverview
+- Issue Tracker: https://github.com/collective/collective.localrolesoverview/issues
+- Source Code: https://github.com/collective/collective.localrolesoverview
 - Documentation: https://docs.plone.org/foo/bar
 
 

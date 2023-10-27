@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="collective.localrolesoverview"
+      metal:use-macro="context/main_template/macros/master">
+<body>
+
+  <metal:main fill-slot="main">
+
+    <h2>Local roles overview</h2>
+    <ul>
+      <li tal:repeat="pid python: view.principal_ids_sorted">
+        <div class="principal"
+          tal:define="principal python: view.lrmap[pid]">
+          <div class="principal__header">
+            <span class="principal__title">${python: view.lrmap[pid]["title"]}</span>
+            <span class="principal__type badge text-bg-primary">${python: view.lrmap[pid]["type"]}</span>
+          </div>
+          <ul class="paths">
+            <li tal:repeat="path python: principal['paths']">
+              <a href="${python: principal[path]['url']}/@@sharing"><span class="path">${path}</span></a>
+              <ul class="roles">
+                <li tal:repeat="role python: principal[path]['roles']" class="badge text-bg-primary rounded-pill">${role}</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+  </metal:main>
+</body>
+</html>

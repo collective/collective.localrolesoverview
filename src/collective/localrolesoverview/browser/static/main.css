@@ -1,0 +1,45 @@
+.template-localroles-overview .principal{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5em;
+}
+
+.template-localroles-overview .principal__header{
+    display: flex;
+    gap: 0.5em;
+    --bs-badge-font-size: 0.65em;
+    --bs-badge-font-weight: 500;
+    --bs-badge-padding-x: 0.5em;
+    --bs-badge-padding-y: 0.15em;
+    line-height: 1.4em;
+}
+
+.template-localroles-overview .paths{
+    padding: 0;
+}
+
+.template-localroles-overview .paths > li{
+    display: flex;
+    align-items: center;
+    padding: 0.2em;
+}
+.template-localroles-overview .paths > li:nth-child(odd){
+    background-color: gainsboro;
+}
+
+.template-localroles-overview .roles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em;
+    list-style-type: none;
+}
+
+.template-localroles-overview .roles .badge{
+    --bs-badge-font-size: 0.65em;
+    --bs-badge-font-weight: 500;
+    --bs-badge-padding-x: 0.5em;
+    --bs-badge-padding-y: 0.15em;
+    --bs-border-radius-pill: 0.8em;
+    line-height: 1.4em;
+}

@@ -2,18 +2,18 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="collective.permissionsoverview">
+    i18n_domain="collective.localrolesoverview">
 
   <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
   <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot
       directory="overrides"
-      layer="collective.permissionsoverview.interfaces.ICollectivePermissionsoverviewLayer"
+      layer="collective.localrolesoverview.interfaces.ICollectiveLocalrolesoverviewviewLayer"
       />
 
   <!-- Publish static files -->
   <plone:static
-      name="collective.permissionsoverview"
+      name="collective.localrolesoverview"
       type="plone"
       directory="static"
       />

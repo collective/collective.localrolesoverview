@@ -1,4 +1,4 @@
-* collective.permissionsoverview version:
+* collective.localrolesoverview version:
 * Plone Version:
 * Python version:
 * Operating System: Linux

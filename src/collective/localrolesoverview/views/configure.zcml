@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.localrolesoverview">
+
+ <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+    name="localroles-overview"
+    for="*"
+    class=".localroles_overview.LocalrolesOverview"
+    template="localroles_overview.pt"
+    permission="cmf.ManagePortal"
+    layer="collective.localrolesoverview.interfaces.ICollectiveLocalrolesoverviewviewLayer"
+    />
+
+</configure>

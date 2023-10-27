@@ -4,17 +4,17 @@
 #
 # Run this robot test stand-alone:
 #
-#  $ bin/test -s collective.permissionsoverview -t test_example.robot --all
+#  $ bin/test -s collective.localrolesoverview -t test_example.robot --all
 #
 # Run this robot test with robot server (which is faster):
 #
 # 1) Start robot server:
 #
-# $ bin/robot-server --reload-path src collective.permissionsoverview.testing.COLLECTIVE_PERMISSIONSOVERVIEW_ACCEPTANCE_TESTING
+# $ bin/robot-server --reload-path src collective.localrolesoverview.testing.COLLECTIVE_LOCALROLESOVERVIEW_ACCEPTANCE_TESTING
 #
 # 2) Run robot tests:
 #
-# $ bin/robot src/collective/permissionsoverview/tests/robot/test_example.robot
+# $ bin/robot src/collective/localrolesoverview/tests/robot/test_example.robot
 #
 # See the http://docs.plone.org for further details (search for robot
 # framework).

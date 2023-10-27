@@ -8,12 +8,12 @@ class HiddenProfiles(object):
     def getNonInstallableProfiles(self):
         """Hide uninstall profile from site-creation and quickinstaller."""
         return [
-            "collective.permissionsoverview:uninstall",
+            "collective.localrolesoverview:uninstall",
         ]
 
     def getNonInstallableProducts(self):
         """Hide the upgrades package from site-creation and quickinstaller."""
-        return ["collective.permissionsoverview.upgrades"]
+        return ["collective.localrolesoverview.upgrades"]
 
 
 def post_install(context):

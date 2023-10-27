@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  i18n:domain="collective.localrolesoverview">
+
+  <records prefix="plone.bundles/local_roles_overview"
+    interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="enabled">True</value>
+    <value key="depends">plone</value>
+    <!-- <value key="jscompilation">++plone++collective.localrolesoverview/main.js</value> -->
+    <value key="csscompilation">++plone++collective.localrolesoverview/main.css</value>
+  </records>
+
+  <!-- -*- extra stuff goes here -*- -->
+
+</registry>

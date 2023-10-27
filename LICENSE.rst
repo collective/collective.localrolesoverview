@@ -1,4 +1,4 @@
-collective.permissionsoverview Copyright 2023, Maik Derstappen
+collective.localrolesoverview Copyright 2023, Maik Derstappen
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License version 2

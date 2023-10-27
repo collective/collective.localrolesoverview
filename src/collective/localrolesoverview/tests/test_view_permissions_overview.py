@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-from collective.permissionsoverview.testing import (
-    COLLECTIVE_PERMISSIONSOVERVIEW_FUNCTIONAL_TESTING,
+from collective.localrolesoverview.testing import (
+    COLLECTIVE_LOCALROLESOVERVIEW_FUNCTIONAL_TESTING,
 )
-from collective.permissionsoverview.testing import (
-    COLLECTIVE_PERMISSIONSOVERVIEW_INTEGRATION_TESTING,
+from collective.localrolesoverview.testing import (
+    COLLECTIVE_LOCALROLESOVERVIEW_INTEGRATION_TESTING,
 )
-from collective.permissionsoverview.views.permissions_overview import (
-    IPermissionsOverview,
+from collective.localrolesoverview.views.localroles_overview import (
+    ILocalrolesOverview,
 )
 from plone import api
 from plone.app.testing import setRoles
@@ -19,7 +19,7 @@ import unittest
 
 class ViewsIntegrationTest(unittest.TestCase):
 
-    layer = COLLECTIVE_PERMISSIONSOVERVIEW_INTEGRATION_TESTING
+    layer = COLLECTIVE_LOCALROLESOVERVIEW_INTEGRATION_TESTING
 
     def setUp(self):
         self.portal = self.layer["portal"]
@@ -27,30 +27,30 @@ class ViewsIntegrationTest(unittest.TestCase):
         api.content.create(self.portal, "Folder", "other-folder")
         api.content.create(self.portal, "Document", "front-page")
 
-    def test_permissions_overview_is_registered(self):
+    def test_localroles_overview_is_registered(self):
         view = getMultiAdapter(
             (self.portal["other-folder"], self.portal.REQUEST),
-            name="permissions-overview",
+            name="localroles-overview",
         )
-        self.assertTrue(IPermissionsOverview.providedBy(view))
+        self.assertTrue(ILocalrolesOverview.providedBy(view))
 
-    def test_permissions_overview_not_matching_interface(self):
+    def test_localroles_overview_not_matching_interface(self):
         view_found = True
         try:
             view = getMultiAdapter(
                 (self.portal["front-page"], self.portal.REQUEST),
-                name="permissions-overview",
+                name="localroles-overview",
             )
         except ComponentLookupError:
             view_found = False
         else:
-            view_found = IPermissionsOverview.providedBy(view)
+            view_found = ILocalrolesOverview.providedBy(view)
         self.assertFalse(view_found)
 
 
 class ViewsFunctionalTest(unittest.TestCase):
 
-    layer = COLLECTIVE_PERMISSIONSOVERVIEW_FUNCTIONAL_TESTING
+    layer = COLLECTIVE_LOCALROLESOVERVIEW_FUNCTIONAL_TESTING
 
     def setUp(self):
         self.portal = self.layer["portal"]

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Installer for the collective.permissionsoverview package."""
+"""Installer for the collective.localrolesoverview package."""
 
 from setuptools import find_packages
 from setuptools import setup
@@ -15,7 +15,7 @@ long_description = "\n\n".join(
 
 
 setup(
-    name="collective.permissionsoverview",
+    name="collective.localrolesoverview",
     version="1.0a1",
     description="Shows assigned local roles for all users, groups on content.",
     long_description=long_description,
@@ -36,12 +36,12 @@ setup(
     keywords="Python Plone CMS",
     author="Maik Derstappen",
     author_email="md@derico.de",
-    url="https://github.com/collective/collective.permissionsoverview",
+    url="https://github.com/collective/collective.localrolesoverview",
     project_urls={
-        "PyPI": "https://pypi.org/project/collective.permissionsoverview/",
-        "Source": "https://github.com/collective/collective.permissionsoverview",
-        "Tracker": "https://github.com/collective/collective.permissionsoverview/issues",
-        # 'Documentation': 'https://collective.permissionsoverview.readthedocs.io/en/latest/',
+        "PyPI": "https://pypi.org/project/collective.localrolesoverview/",
+        "Source": "https://github.com/collective/collective.localrolesoverview",
+        "Tracker": "https://github.com/collective/collective.localrolesoverview/issues",
+        # 'Documentation': 'https://collective.localrolesoverview.readthedocs.io/en/latest/',
     },
     license="GPL version 2",
     packages=find_packages("src", exclude=["ez_setup"]),
@@ -72,6 +72,6 @@ setup(
     [z3c.autoinclude.plugin]
     target = plone
     [console_scripts]
-    update_locale = collective.permissionsoverview.locales.update:update_locale
+    update_locale = collective.localrolesoverview.locales.update:update_locale
     """,
 )
