@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a2 (unreleased)
+1.0b1 (2023-10-27)
 ------------------
 
 - only show local, non-acquired roles, but also collect global_roles
