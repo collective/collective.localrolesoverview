@@ -33,6 +33,9 @@ collective.localrolesoverview
 
 Shows assigned local roles for all users, groups on all content.
 
+This packages provides a view called `@@localroles-overview`, which you can call on any Plone context.
+
+
 .. image:: docs/screenshot.png
 
 
