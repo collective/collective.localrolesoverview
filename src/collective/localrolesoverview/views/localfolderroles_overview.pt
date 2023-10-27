@@ -8,7 +8,7 @@
 
   <metal:main fill-slot="main">
 
-    <h2>Local roles overview</h2>
+    <h2>Local folder roles overview</h2>
     <ul>
       <li tal:repeat="pid python: view.principal_ids_sorted">
         <div class="principal"
@@ -21,7 +21,7 @@
             <li tal:repeat="path python: principal['paths']">
               <a href="${python: principal[path]['url']}/@@sharing"><span class="path">${path}</span></a>
               <ul class="roles">
-                <li tal:repeat="role python: principal[path]['roles']" class="badge text-bg-primary rounded-pill">${role}</li>
+                <li tal:repeat="role python: principal[path]['roles']" class="badge text-bg-primary">${role}</li>
               </ul>
             </li>
           </ul>

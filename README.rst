@@ -31,13 +31,15 @@
 collective.localrolesoverview
 ==============================
 
-Shows assigned local roles for all users, groups on all content.
+Shows assigned local roles for all users, groups on all folderish content.
 
-This packages provides a view called `@@localroles-overview`, which you can call on any Plone context.
+This packages provides a view called `@@localfolderroles-overview`, which you can call on any Plone context.
 
+.. image:: https://github.com/collective/collective.localrolesoverview/raw/main/docs/screenshot.png
 
-.. image:: docs/screenshot.png
+You can also ignore users `@@localfolderroles-overview?ignore_users=1`.
 
+.. image:: https://github.com/collective/collective.localrolesoverview/raw/main/docs/screenshot-ignored-users.png
 
 
 Installation

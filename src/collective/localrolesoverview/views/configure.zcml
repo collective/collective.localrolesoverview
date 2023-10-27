@@ -7,10 +7,10 @@
  <!-- -*- extra stuff goes here -*- -->
 
   <browser:page
-    name="localroles-overview"
+    name="localfolderroles-overview"
     for="*"
-    class=".localroles_overview.LocalrolesOverview"
-    template="localroles_overview.pt"
+    class=".localroles_overview.LocalfolderrolesOverview"
+    template="localfolderroles_overview.pt"
     permission="cmf.ManagePortal"
     layer="collective.localrolesoverview.interfaces.ICollectiveLocalrolesoverviewviewLayer"
     />
