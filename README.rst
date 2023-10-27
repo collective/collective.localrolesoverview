@@ -31,33 +31,10 @@
 collective.localrolesoverview
 ==============================
 
-Shows assigned local roles for all users, groups on content.
+Shows assigned local roles for all users, groups on all content.
 
-Features
---------
+.. image:: docs/screenshot.png
 
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
 
 
 Installation
@@ -79,7 +56,7 @@ and then running ``bin/buildout``
 Authors
 -------
 
-Provided by awesome people ;)
+Provided by http://derico.de - Maik Derstappen (MrTango)
 
 
 Contributors
@@ -95,14 +72,12 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/collective.localrolesoverview/issues
 - Source Code: https://github.com/collective/collective.localrolesoverview
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support
 -------
 
 If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
 
 
 License
