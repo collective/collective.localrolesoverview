@@ -15,7 +15,7 @@
           tal:define="principal python: view.lrmap[pid]">
           <div class="principal__header">
             <span class="principal__title">${python: view.lrmap[pid]["title"]}</span>
-            <span class="principal__type badge text-bg-primary">${python: view.lrmap[pid]["type"]}</span>
+            <span class="principal__type badge text-bg-secondary">${python: view.lrmap[pid]["type"]}</span>
           </div>
           <ul class="paths">
             <li tal:repeat="path python: principal['paths']">
